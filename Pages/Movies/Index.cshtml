@@ -14,6 +14,11 @@
 <form>
 
     <p>
+
+        <select asp-for="MovieGenre" asp-items="Model.Genres">
+            <option value="">ALL</option>
+        </select>
+
         Title:<input type="text" asp-for="SearchString"/>
         <input type="submit" value="Filter"/>
     </p>
