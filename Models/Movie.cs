@@ -16,5 +16,7 @@ namespace RazorPagesMovie.Models
         //Price字段映射到数据库中的货币
         [Column(TypeName ="decimal(18,2)")]
         public decimal Price {  get; set; }
+
+        public string Rating {  get; set; }
     }
 }
